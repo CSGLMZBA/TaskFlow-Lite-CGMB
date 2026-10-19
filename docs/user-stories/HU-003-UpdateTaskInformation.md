@@ -49,12 +49,18 @@ When trying to update the task
 Then the task must not be updated
 And they must be informed that the description does not fulfill the maximum length restriction
 
-### CA-005 - Optional Title
+### CA-007 - Optional Title
 Given that user does not provide a new title
 And does provides a description
 When the task is updated
 Then the task must be updated successfully
 And the original title must be preserved.
+
+### CA-008 - Editing how tos
+Given that the user is trying to edit a task
+And the task exists
+Then the current task details must be loaded onto the fields
+And the user should be able to edit them as they desire
 
 ## Business rules
 RN-001: All tasks must have a title
@@ -62,7 +68,8 @@ RN-002: The title must contain 3-80 characters
 RN-003: The description is optional
 RN-004: The description has a maximum of 300 characters
 RN-006: Every task must be uniquely identifiable
-RN-007: The las update time of the task must be accessible
+RN-007: The last update time of the task must be accessible/displayed on the interface.
+RN-008: Normalization rules apply the same as with task creation.
 
 ## dependencies
 This history depends on:

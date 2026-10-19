@@ -1,9 +1,9 @@
 # HU - 002 – View Tasks
 ## User history
-As a member of the team, i want to see the tasks registered by other members and myself.
+As a member of the team, i want to see the tasks registered 
 
 # Acceptance Criteria
-### CA-002 – Display details
+### CA-001 – Display details
 Given that the user request to see the tasks
 When displaying them
 Then the tasks must show the title
@@ -25,12 +25,12 @@ and they must be on the corresponding section to their state.
 
 
 ## Business rules
-RN-001: All boards must have sections.
+RN-001: The board must have sections.
 RN-002: The sections must correspond to all the possible states of a task.
-RN-003: The boards must be up to date with the latest modifications.
+RN-003: The board must be up to date with the latest modifications.
 RN-004: All tasks must belong to a board.
 RN-005: A board can be empty.
-RN-006: Truncation just cuts off the text with a -.
+RN-006: Truncation just cuts off the text with a hyphen after the character limit.
 
 ## dependencies
 This history depends on the user histories for creating tasks, updating tasks, and updating the states of such tasks. 

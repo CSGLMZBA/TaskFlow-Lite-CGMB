@@ -28,7 +28,7 @@ And they must receive information indicating that the status is not valid.
 RN-001: All tasks must have a status
 RN-003: The status can only be updated via selector.
 RN-004: Tasks can't be updated to invalid statuses.
-RN-007: The las update time of the task status must be available.
+RN-007: The last update time of the task status must be available/displayed in the interface.
 
 ## dependencies
 This history depends on:

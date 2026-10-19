@@ -18,6 +18,21 @@ When the user starts the software
 Then the storage must be started on an empty format
 And we must start saving the data onto it
 
+### CA-003 - Invalid storage
+Given that on trying to read or write to the local storage
+And The program is unable to because the data is malformed
+Then The user must be notified 
+And a backup must be loaded if available
+Otherwise we must save the corrupted data to the most recent backup
+And then initialize a blank storage
+
+### CA-004 - backups
+Given that there is data on current local storage
+And There has been a period longer than 30 minutes without backups
+Then the system must create a backup with the data with its timestamp on it
+And the system must check how many backups there are
+If there are already 7 backups
+Then the oldest backup must be deleted
 ## Business rules
 RN-001: All updates must be saved
 RN-002: The saved information must contain every required detail for the different components
