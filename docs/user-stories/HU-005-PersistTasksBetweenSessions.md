@@ -9,14 +9,14 @@ Given that the user wants to use the software
 And there is data saved on the device
 When the user starts the software
 Then the data must be loaded into the current state
-And we must start logging events onto it
+And we must start saving the data onto it
 
 ### CA-002 - No storage currently
 Given that the user wants to use the software
 And there is no local storage saved
 When the user starts the software
 Then the storage must be started on an empty format
-And we must start logging events onto it
+And we must start saving the data onto it
 
 ## Business rules
 RN-001: All updates must be saved

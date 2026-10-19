@@ -49,8 +49,9 @@ RN-003: The description is optional
 RN-004: The description has a maximum of 300 characters
 RN-005: All new tasks start as pending.
 RN-006: Every task must be uniquely identifiable
-RN007: The creation time of the task must be accessible
-
+RN-007: The creation time of the task must be accessible/shown in the interface.
+RN-008: Trailing whitespaces and Leading whitespaces are removed from description and title.
+RN-009: A description/title with only whitespaces gets treated as empty.
 ## dependencies
 This history does not depends on another HU.
 

@@ -49,6 +49,13 @@ When trying to update the task
 Then the task must not be updated
 And they must be informed that the description does not fulfill the maximum length restriction
 
+### CA-005 - Optional Title
+Given that user does not provide a new title
+And does provides a description
+When the task is updated
+Then the task must be updated successfully
+And the original title must be preserved.
+
 ## Business rules
 RN-001: All tasks must have a title
 RN-002: The title must contain 3-80 characters

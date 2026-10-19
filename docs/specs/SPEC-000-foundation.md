@@ -64,10 +64,10 @@ The structure may be extended incrementally when justified by an approved requir
 * localStorage for client-side task persistence.
 * Git for version control.
 * Visual Studio Code as the development environment.
-
+* Tailwind CSS.
 ### 4.2. Prohibited Technologies
 
-* No frontend frameworks.
+* No other frontend frameworks than the ones listed in here.
 * No backend services.
 * No server-side application logic.
 * No external database.

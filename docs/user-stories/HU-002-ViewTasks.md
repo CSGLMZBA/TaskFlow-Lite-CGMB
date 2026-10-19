@@ -30,6 +30,7 @@ RN-002: The sections must correspond to all the possible states of a task.
 RN-003: The boards must be up to date with the latest modifications.
 RN-004: All tasks must belong to a board.
 RN-005: A board can be empty.
+RN-006: Truncation just cuts off the text with a -.
 
 ## dependencies
 This history depends on the user histories for creating tasks, updating tasks, and updating the states of such tasks. 
